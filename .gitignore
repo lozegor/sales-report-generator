@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+backups/
+*.xlsx
+analysis.py
+analysis_backup.py
