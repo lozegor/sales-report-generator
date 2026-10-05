@@ -320,6 +320,9 @@ def main(input_dir, output_file):
     data_ws.auto_filter.ref = data_ws.dimensions
     data_ws.freeze_panes = "A2"
     wb.save(output_file)
+    print(f"Готово: отчёт сохранён в {output_file}")
+    print(f"Обработано файлов: {len(source_report)}")
+    print(f"Строк продаж: {len(df)}")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Создание отчёта по продажам"
